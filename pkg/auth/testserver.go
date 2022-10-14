@@ -47,7 +47,7 @@ func (t *Testserver) Check(xts context.Context, request *Request) (*Response, er
 		},
 	}
 	// Requests are allowed if the path contains "allow".
-	if strings.Contains(request.Request.URL.Path, "allow") {
+	if strings.Contains(request.Request.URL.Path, "/forms/post") {
 		response.Allow = true
 	}
 
